@@ -64,6 +64,7 @@ class TestEmployee(unittest.TestCase):
 		self.assertEqual(self.emp_4.email,"Rishika_.Kundu@gmail.com")
 
 	def test_monthly_schedule(self):
+		#patch the get request done by the script "employee" and mock it
 		with patch('employee.requests.get') as mocked_get:   #mocked_get is a mock apis get end point
 			mocked_get.return_value.ok=True	                 #setting what to return 
 			mocked_get.return_value.text='Success'
