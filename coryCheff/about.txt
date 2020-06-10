@@ -1,0 +1,6 @@
+learnt from:-Python Tutorial_ Unit Testing Your Code with the unittest Module
+
+. <- means success
+F <- test failed
+
+test driven development:- first test script then actual script
